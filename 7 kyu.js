@@ -4,4 +4,9 @@ function breakChocolate(n,m) {
     return 0;
 }
 
+//Area of an arrow  https://www.codewars.com/kata/589478160c0f8a40870000bc
+function arrowArea(a,b) {
+    let h = b / 2;
+    return 1 / 2 * a * h;
+}
 
