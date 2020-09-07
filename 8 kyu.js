@@ -89,3 +89,9 @@ function seatsInTheater(nCols, nRows, col, row) {
     let a = (nCols - col + 1) * (nRows - row);
     return a;
 }
+
+//For Twins: 2. Math operations  https://www.codewars.com/kata/for-twins-2-math-operations
+function iceBrickVolume(radius, bottleLength, rimLength){
+    let a = (radius * 2) / 2 ** 0.5;
+    return Math.round(a * a * (bottleLength - rimLength));
+}
