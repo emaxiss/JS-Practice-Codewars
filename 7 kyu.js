@@ -15,3 +15,8 @@ function angle(n) {
     return (n - 2) * 180;
 }
 
+//Is Undefined?  https://www.codewars.com/kata/564a6486c2070faee6000011
+function isUndefined(value) {
+    if (typeof value === 'undefined') return true;
+    return false;
+}
