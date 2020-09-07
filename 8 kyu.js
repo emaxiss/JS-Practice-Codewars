@@ -95,3 +95,10 @@ function iceBrickVolume(radius, bottleLength, rimLength){
     let a = (radius * 2) / 2 ** 0.5;
     return Math.round(a * a * (bottleLength - rimLength));
 }
+
+
+//Third Angle of a Triangle  https://www.codewars.com/kata/third-angle-of-a-triangle
+function otherAngle(a, b) {
+    return 180 - (a + b);
+}
+

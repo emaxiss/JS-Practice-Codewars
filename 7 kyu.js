@@ -10,3 +10,8 @@ function arrowArea(a,b) {
     return 1 / 2 * a * h;
 }
 
+//Sum of angles  https://www.codewars.com/kata/sum-of-angles
+function angle(n) {
+    return (n - 2) * 180;
+}
+
