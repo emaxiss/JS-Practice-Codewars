@@ -102,3 +102,36 @@ function otherAngle(a, b) {
     return 180 - (a + b);
 }
 
+//Convert boolean values to strings 'Yes' or 'No'.  https://www.codewars.com/kata/convert-boolean-values-to-strings-yes-or-no
+function boolToWord( bool ){
+    if (bool === true) return 'Yes';
+    return 'No';
+}
+
+//Super Duper Easy  https://www.codewars.com/kata/super-duper-easy
+function problem(x){
+    if (typeof x === 'string') return 'Error';
+    return x * 50 + 6;
+}
+
+//Who ate the cookie?  https://www.codewars.com/kata/55a996e0e8520afab9000055
+function cookie(x){
+    if (typeof x === 'string') return "Who ate the last cookie? It was Zach!"
+    if (typeof x === 'number') return "Who ate the last cookie? It was Monica!"
+    return "Who ate the last cookie? It was the dog!"
+}
+
+//Fix the Bugs (Syntax) - My First Kata  https://www.codewars.com/kata/fix-the-bugs-syntax-my-first-kata
+function myFirstKata(a, b) {
+    if (typeof a !== 'number' || typeof b !== 'number') {
+        return false;
+    } else {
+        return a % b + b % a;
+    }
+}
+
+//Type of sum  https://www.codewars.com/kata/type-of-sum
+function typeOfSum(a, b) {
+    return typeof (a + b);
+}
+
