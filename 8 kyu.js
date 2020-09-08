@@ -148,3 +148,12 @@ var stringToNumber = function(str){
     return +str;
 }
 
+//Convert a Boolean to a String  https://www.codewars.com/kata/convert-a-boolean-to-a-string
+function booleanToString(b){
+    return b.toString();
+}
+
+//Sum The Strings  https://www.codewars.com/kata/sum-the-strings
+function sumStr(a,b) {
+    return +a + +b + '';
+}
