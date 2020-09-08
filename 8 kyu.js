@@ -135,3 +135,16 @@ function typeOfSum(a, b) {
     return typeof (a + b);
 }
 
+//Convert a Number to a String!  https://www.codewars.com/kata/convert-a-number-to-a-string
+function numberToString(num) {
+    return num + '';
+}
+
+//Number toString  https://www.codewars.com/kata/number-tostring
+let a = 123 + '';
+
+//Convert a String to a Number!  https://www.codewars.com/kata/convert-a-string-to-a-number
+var stringToNumber = function(str){
+    return +str;
+}
+
