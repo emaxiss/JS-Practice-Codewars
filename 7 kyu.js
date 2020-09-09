@@ -20,3 +20,21 @@ function isUndefined(value) {
     if (typeof value === 'undefined') return true;
     return false;
 }
+
+//Discover The Original Price  https://www.codewars.com/kata/discover-the-original-price
+function discoverOriginalPrice(discountedPrice, salePercentage){
+    const disc = (100 - salePercentage) / 100;
+    return +(discountedPrice/disc).toFixed(2);
+}
+
+//How many times should I go?  https://www.codewars.com/kata/how-many-times-should-i-go
+function howManyTimes(annualPrice, individualPrice) {
+    return Math.ceil(annualPrice/individualPrice);
+}
+
+//Return the closest number multiple of 10  https://www.codewars.com/kata/return-the-closest-number-multiple-of-10
+const closestMultiple10 = num => {
+    return Math.round(num/10) * 10;
+}
+
+
