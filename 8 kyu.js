@@ -179,3 +179,16 @@ function trueOrFalse(val){
     if (val)    return 'true';
     else     return 'false';
 }
+
+//Simple Comparison?  https://www.codewars.com/kata/simple-comparison
+function add(a, b){
+    if (a == b) return true;
+    return false;
+}
+
+//Is he gonna survive?  https://www.codewars.com/kata/is-he-gonna-survive
+function hero(bullets, dragons){
+    return bullets/dragons >= 2;
+}
+
+
