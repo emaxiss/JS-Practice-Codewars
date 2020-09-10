@@ -157,3 +157,25 @@ function booleanToString(b){
 function sumStr(a,b) {
     return +a + +b + '';
 }
+
+//Keep up the hoop  https://www.codewars.com/kata/keep-up-the-hoop
+function hoopCount (n) {
+    if (n >= 10) return "Great, now move on to tricks";
+    return "Keep at it until you get it";
+}
+
+//Chuck Norris VII - True or False? (Beginner)  https://www.codewars.com/kata/chuck-norris-vii-true-or-false-beginner
+function ifChuckSaysSo(){
+    return !!null;
+}
+
+//Training JS #6: Basic data types--Boolean and conditional statements if..else  https://www.codewars.com/kata/training-js-number-6-basic-data-types-boolean-and-conditional-statements-if-dot-else
+function trueOrFalse(val){
+    if (!val) return false.toString();
+    return true.toString();
+}
+//OR
+function trueOrFalse(val){
+    if (val)    return 'true';
+    else     return 'false';
+}
