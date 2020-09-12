@@ -37,4 +37,14 @@ const closestMultiple10 = num => {
     return Math.round(num/10) * 10;
 }
 
+//lucky number  https://www.codewars.com/kata/55afed09237df73343000042
+function isLucky(n) {
+    let str = n + '';
+    let sum = 0;
+    for (let x = 0; x < str.length; x++) {
+        sum += str[x];
+    }
+    return +sum === 0 || +sum % 9 === 0;
+}
+
 
