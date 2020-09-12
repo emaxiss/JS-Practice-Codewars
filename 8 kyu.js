@@ -246,3 +246,52 @@ function getRealFloor(n) {
     else if (n > 13) return n - 2;
     return n - 1;
 }
+
+//Calculate BMI  https://www.codewars.com/kata/calculate-bmi
+function bmi(weight, height) {
+    const bmasind = weight/height**2;
+    if (bmasind <= 18.5) return 'Underweight';
+    if (bmasind <= 25) return 'Normal';
+    if (bmasind <= 30) return 'Overweight';
+    else if (bmasind > 30) return 'Obese';
+}
+
+//Fuel Calculator  https://www.codewars.com/kata/57b58827d2a31c57720012e8
+function fuelPrice(litres, pricePerLiter) {
+    if (litres >= 10) pricePerLiter -= 0.25;
+    else if (litres >= 8) pricePerLiter -= 0.20;
+    else if (litres >= 6) pricePerLiter -= 0.15;
+    else if (litres >= 4) pricePerLiter -= 0.10;
+    else if (litres >= 2) pricePerLiter -= 0.05;
+    return +(litres * pricePerLiter).toFixed(2);
+}
+
+//Holiday VI - Shark Pontoon  https://www.codewars.com/kata/57e921d8b36340f1fd000059
+function shark(pontoonDistance, sharkDistance, youSpeed, sharkSpeed, dolphin){
+    let me = pontoonDistance/youSpeed;
+    let s = sharkDistance/sharkSpeed;
+    if (dolphin === true) s = sharkDistance/(sharkSpeed/2);
+    if (me < s) return 'Alive!';
+    return 'Shark Bait!';
+}
+
+//Alan Partridge II - Apple Turnover  https://www.codewars.com/kata/alan-partridge-ii-apple-turnover
+function apple(x){
+    let newX;
+    if (typeof x === 'string') newX = +x;
+    newX = x;
+    if (Math.pow(newX, 2) > 1000) return `It's hotter than the sun!!`;
+    return 'Help yourself to a honeycomb Yorkie for the glovebox.';
+}
+
+//Simple multiplication  https://www.codewars.com/kata/simple-multiplication
+const simpleMultiplication = number => {
+    return number % 2 === 0? number*8: number*9;
+}
+
+//Area or Perimeter  https://www.codewars.com/kata/5ab6538b379d20ad880000ab
+const areaOrPerimeter = (l , w) => {
+    return (l === w)? l * w : (l + w) * 2;
+}
+
+//

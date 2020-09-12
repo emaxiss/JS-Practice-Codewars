@@ -47,4 +47,14 @@ function isLucky(n) {
     return +sum === 0 || +sum % 9 === 0;
 }
 
+//Find the sum of the roots of a quadratic equation  https://www.codewars.com/kata/57d448c6ba30875437000138
+function roots (a,b,c) {
+    let d = b ** 2 - 4 * a * c;
+    let x = -(b)/(2*a);
+    let x1 = (-(b) + Math.sqrt(d)) / (2 * a);
+    let x2 = (-(b) - Math.sqrt(d)) / (2 * a);
+    if (d === 0) return +(x*2).toFixed(2);
+    if (d > 0) return +(x1+x2).toFixed(2);
+    return null;
+}
 
