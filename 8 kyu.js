@@ -217,3 +217,32 @@ function getGrade (s1, s2, s3) {
     else if (mean >= 60 && mean <= 70) return 'D';
     else if (mean >= 0 && mean <= 60) return 'F';
 }
+
+//Determine offspring sex based on genes XX and XY chromosomes  https://www.codewars.com/kata/determine-offspring-sex-based-on-genes-xx-and-xy-chromosomes
+function chromosomeCheck(sperm) {
+    if (sperm === 'XX') return `Congratulations! You're going to have a daughter.`;
+    return `Congratulations! You're going to have a son.`;
+}
+
+//Fix your code before the garden dies!  https://www.codewars.com/kata/57158fb92ad763bb180004e7
+function rainAmount(mm){
+    if (mm < 40) return `You need to give your plant ${40 - mm}mm of water`;
+    else return "Your plant has had more than enough water for today!";
+}
+
+//Training JS #6: Basic data types--Boolean and conditional statements if..else  https://www.codewars.com/kata/training-js-number-6-basic-data-types-boolean-and-conditional-statements-if-dot-else
+function trueOrFalse(val){
+    if (!val) return false.toString();
+    return true.toString();
+}
+function trueOrFalse(val){
+    if (val)    return 'true';
+    else     return 'false';
+}
+
+//What's the real floor?  https://www.codewars.com/kata/whats-the-real-floor
+function getRealFloor(n) {
+    if (n <= 0) return n;
+    else if (n > 13) return n - 2;
+    return n - 1;
+}
