@@ -61,4 +61,13 @@ function roots (a,b,c) {
 //Is this a triangle?  https://www.codewars.com/kata/is-this-a-triangle
 const isTriangle = (a,b,c) =>  a+b>c && b+c>a && a+c>b;
 
+//Calculate Two People's Individual Ages  https://www.codewars.com/kata/calculate-two-peoples-individual-ages
+function getAges(sum,difference){
+    let y = (sum - difference) / 2;
+    let o = sum - ((sum - difference)/2);
+    if (sum < 0 || difference < 0 || y < 0 || o < 0) return null;
+    return [o, y];
+}
+
+//
 

@@ -326,4 +326,26 @@ function finalGrade (exam, projects) {
     else return 0;
 }
 
-//
+//Are You Playing Banjo?  https://www.codewars.com/kata/53af2b8861023f1d88000832
+function areYouPlayingBanjo(name) {
+    if (name[0] === 'R' || name[0] === 'r') return `${name} plays banjo`;
+    return `${name} does not play banjo`;
+}
+
+//Plural  https://www.codewars.com/kata/52ceafd1f235ce81aa00073a
+function plural(n) {
+    return n !== 1;
+}
+
+//Watermelon  https://www.codewars.com/kata/55192f4ecd82ff826900089e
+function divide(weight){
+    return weight % 2 !== 1 && weight !== 2;
+}
+
+//Days in the year  https://www.codewars.com/kata/56d6c333c9ae3fc32800070f
+function yearDays(year) {
+    if (year % 100 === 0 && year % 400 !== 0) return `${year} has 365 days`;
+    if (year % 4 === 0) return `${year} has 366 days`;
+    return `${year} has 365 days`
+}
+
