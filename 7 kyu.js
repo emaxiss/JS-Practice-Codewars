@@ -58,3 +58,7 @@ function roots (a,b,c) {
     return null;
 }
 
+//Is this a triangle?  https://www.codewars.com/kata/is-this-a-triangle
+const isTriangle = (a,b,c) =>  a+b>c && b+c>a && a+c>b;
+
+

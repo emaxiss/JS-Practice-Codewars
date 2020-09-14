@@ -294,4 +294,36 @@ const areaOrPerimeter = (l , w) => {
     return (l === w)? l * w : (l + w) * 2;
 }
 
+//Is n divisible by x and y?  https://www.codewars.com/kata/is-n-divisible-by-x-and-y
+const isDivisible = (n, x, y) => {return n % x === 0 && n % y === 0}
+
+//Rock Paper Scissors!  https://www.codewars.com/kata/rock-paper-scissors
+function rps (p1, p2) {
+    if (p1 === 'scissors' && p2 === 'paper') return "Player 1 won!";
+    if (p1 === 'paper' && p2 === 'rock') return "Player 1 won!";
+    if (p1 === 'rock' && p2 === 'scissors') return "Player 1 won!";
+    if (p1 === 'rock' && p2 === 'paper') return "Player 2 won!"
+    if (p1 === 'paper' && p2 === 'scissors') return "Player 2 won!"
+    if (p1 === 'scissors' && p2 === 'rock') return "Player 2 won!"
+    if (p1 === p2) return 'Draw!';
+};
+
+//L1: Set Alarm  https://www.codewars.com/kata/l1-set-alarm
+function setAlarm(employed, vacation){
+    return employed && !vacation;
+}
+
+//Can we divide it?  https://www.codewars.com/kata/can-we-divide-it
+function isDivideBy(number, a, b) {
+    return number % a === 0 && number % b === 0;
+}
+
+//Student's Final Grade  https://www.codewars.com/kata/students-final-grade
+function finalGrade (exam, projects) {
+    if (exam > 90 || projects > 10) return 100;
+    if (exam > 75 && projects >= 5) return 90;
+    if (exam > 50 && projects >= 2) return 75;
+    else return 0;
+}
+
 //

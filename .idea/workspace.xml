@@ -31,7 +31,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../PASV LESSONS" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
@@ -55,7 +55,7 @@
       <updated>1599355240422</updated>
       <workItem from="1599355241651" duration="18336000" />
       <workItem from="1599742904464" duration="1972000" />
-      <workItem from="1599773972783" duration="7961000" />
+      <workItem from="1599773972783" duration="11282000" />
     </task>
     <servers />
   </component>
@@ -67,6 +67,10 @@
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state x="459" y="186" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1366.768@0.0.1366.768" timestamp="1599358793893" />
+    <state x="463" y="126" key="FileChooserDialogImpl" timestamp="1600044210043">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="463" y="126" key="FileChooserDialogImpl/0.0.1366.768@0.0.1366.768" timestamp="1600044210043" />
     <state width="1345" height="192" key="GridCell.Tab.0.bottom" timestamp="1599359159695">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
