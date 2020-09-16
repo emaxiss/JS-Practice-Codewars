@@ -357,3 +357,12 @@ function sum (numbers) {
     }
     return sum;
 }
+
+//Calculate average https://www.codewars.com/kata/57a2013acf1fa5bfc4000921/train/javascript
+function find_average(array) {
+    let avg = 0;
+    for (let el of array) {
+        avg+=el
+    }
+    return avg/array.length;
+}
