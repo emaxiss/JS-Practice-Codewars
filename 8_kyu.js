@@ -366,3 +366,13 @@ function find_average(array) {
     }
     return avg/array.length;
 }
+
+//How good are you really?  https://www.codewars.com/kata/5601409514fc93442500010b/train/javascript
+function betterThanAverage(classPoints, yourPoints) {
+    let avg = 0;
+    for (el of classPoints) {
+        avg+=el
+    }
+    return (avg+yourPoints) / (classPoints.length + 1) < yourPoints;
+}
+
