@@ -69,5 +69,15 @@ function getAges(sum,difference){
     return [o, y];
 }
 
-//
+//Squares sequence  https://www.codewars.com/kata/5546180ca783b6d2d5000062/train/javascript
+function squares(x, n) {
+    const arr = [];
+    for (let i = 1; i <= n; i++) {
+        arr.push(x);
+        x **= 2;
+    }
+    return arr;
+}
+
+
 
