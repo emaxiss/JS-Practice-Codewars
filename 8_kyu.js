@@ -397,4 +397,11 @@ function generateRange(min, max, step){
     return arr;
 }
 
-
+//Filling an array (part 1)  https://www.codewars.com/kata/571d42206414b103dc0006a1/train/javascript
+const arr = N => {
+    let array = [];
+    for (let x = 0; x < (N); x++) {
+        array.push(x);
+    }
+    return array;
+}
