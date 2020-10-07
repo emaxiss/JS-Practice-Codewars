@@ -405,3 +405,22 @@ const arr = N => {
     }
     return array;
 }
+
+//My head is at the wrong end!  https://www.codewars.com/kata/56f699cd9400f5b7d8000b55
+function fixTheMeerkat(arr) {
+    return arr.reverse();
+}
+
+//Convert number to reversed array of digits  https://www.codewars.com/kata/5583090cbe83f4fd8c000051/train/javascript
+function digitize(n) {
+    return n.toString().split('').reverse().map(el=> +el);
+}
+
+//Pre-FizzBuzz Workout #1  https://www.codewars.com/kata/569e09850a8e371ab200000b/train/javascript
+function preFizz(n) {
+    const arr =[];
+    for (let i = 1; i <= n; i++) {
+        arr.push(i)
+    }
+    return arr;
+}
