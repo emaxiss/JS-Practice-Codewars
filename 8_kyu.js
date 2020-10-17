@@ -424,3 +424,19 @@ function preFizz(n) {
     }
     return arr;
 }
+
+//Training JS #7: if..else and ternary operator  https://www.codewars.com/kata/57202aefe8d6c514300001fd/train/javascript
+function saleHotdogs(n){
+    return (n < 5) ? n * 100 : (n >= 5 && n < 10) ? n * 95 : n >= 10 ? n * 90 : 100
+}
+
+//Do I get a bonus?  https://www.codewars.com/kata/56f6ad906b88de513f000d96
+function bonusTime(salary, bonus) {
+    return bonus? "£" + (salary * 10) : "£" + salary;
+}
+
+//101 Dalmatians - squash the bugs, not the dogs!  https://www.codewars.com/kata/56f6919a6b88de18ff000b36/train/javascript
+function howManyDalmatians(number) {
+    var dogs = ["Hardly any", "More than a handful!", "Woah that's a lot of dogs!", "101 DALMATIANS!!!"];
+    return number <= 10 ? dogs[0] : (number <= 50) ? dogs[1] : (number < 101) ? dogs[2] : dogs[3];
+}
