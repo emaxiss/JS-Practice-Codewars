@@ -440,3 +440,17 @@ function howManyDalmatians(number) {
     var dogs = ["Hardly any", "More than a handful!", "Woah that's a lot of dogs!", "101 DALMATIANS!!!"];
     return number <= 10 ? dogs[0] : (number <= 50) ? dogs[1] : (number < 101) ? dogs[2] : dogs[3];
 }
+
+// Be Concise I - The Ternary Operator   https://www.codewars.com/kata/56f3f6a82010832b02000f38/train/javascript
+const describeAge = age => `You're a(n) ${age < 18 ? (age <= 12 ? 'kid' : 'teenager')   
+    : (age <= 64 ? 'adult' : 'elderly')}`;
+
+//Testing, Testing! Return and concatenate a string.   https://www.codewars.com/kata/5977387e131c07082b000098/train/javascript
+function getRes(myScore) {
+    const str1 = 'Sorry, you have failed. Better luck next time!';
+    const str2 = "Congratulations, you have passed!";
+    const str3 = "Thank you for taking part.";
+    return myScore >= 70 ? `${str2} ${str3}` : `${str1} ${str3}`;
+}
+
+
