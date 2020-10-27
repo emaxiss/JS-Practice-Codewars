@@ -79,5 +79,14 @@ function squares(x, n) {
     return arr;
 }
 
+//Triangular Treasure  https://www.codewars.com/kata/525e5a1cb735154b320002c8/train/javascript
+function triangular( n ) {
+    let d = 0;
+    for (let x = 1; x <= n; x++){
+        for (let y = 1; y <= x; y++)
+            d++
+    }
+    return d;
+}
 
 
