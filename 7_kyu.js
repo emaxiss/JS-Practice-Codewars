@@ -89,4 +89,9 @@ function triangular( n ) {
     return d;
 }
 
-
+//Cat Years, Dog Years (2)   https://www.codewars.com/kata/5a6d3bd238f80014a2000187
+var ownedCatAndDog = function(catYears, dogYears) {
+    let cat = catYears < 15 ? 0 : catYears < 24 ? 1 : (catYears - 16) / 4;
+    let dog = dogYears < 15 ? 0 : dogYears < 24 ? 1 : (dogYears - 14) / 5;
+    return [Math.floor(cat), Math.floor(dog)];
+}
