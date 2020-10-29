@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bc044fa0-5af7-495c-a06b-b9ee4f258700" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/7_kyu.js" beforeDir="false" afterPath="$PROJECT_DIR$/7_kyu.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -23,7 +24,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../MLH" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
@@ -35,7 +36,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1603852147002</updated>
-      <workItem from="1603852150326" duration="976000" />
+      <workItem from="1603852150326" duration="1331000" />
+      <workItem from="1603935446903" duration="20000" />
     </task>
     <servers />
   </component>

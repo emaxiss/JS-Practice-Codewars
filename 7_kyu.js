@@ -95,3 +95,8 @@ var ownedCatAndDog = function(catYears, dogYears) {
     let dog = dogYears < 15 ? 0 : dogYears < 24 ? 1 : (dogYears - 14) / 5;
     return [Math.floor(cat), Math.floor(dog)];
 }
+
+//GCD sum  https://www.codewars.com/kata/5dd259444228280032b1ed2a/train/javascript
+function solve(s,g){
+    return s % g === 0 ? [g, (s - g)] : -1;
+}
