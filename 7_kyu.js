@@ -100,3 +100,12 @@ var ownedCatAndDog = function(catYears, dogYears) {
 function solve(s,g){
     return s % g === 0 ? [g, (s - g)] : -1;
 }
+
+//Array Mash  https://www.codewars.com/kata/582642b1083e12521f0000da/train/javascript
+function arrayMash (array1, array2) {
+    const arr = [];
+    for (let i = 0; i < array1.length; i++) {
+        arr.push(array1[i], array2[i]);
+    }
+    return arr;
+}
