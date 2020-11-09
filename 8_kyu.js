@@ -453,4 +453,109 @@ function getRes(myScore) {
     return myScore >= 70 ? `${str2} ${str3}` : `${str1} ${str3}`;
 }
 
+//Get Planet Name By ID    https://www.codewars.com/kata/515e188a311df01cba000003/train/javascript
+function getPlanetName(id){
+    var name;
+    switch(id){
+        case 1:
+            name = 'Mercury'; break;
+        case 2:
+            name = 'Venus'; break;
+        case 3:
+            name = 'Earth'; break;
+        case 4:
+            name = 'Mars'; break;
+        case 5:
+            name = 'Jupiter'; break;
+        case 6:
+            name = 'Saturn'; break;
+        case 7:
+            name = 'Uranus'; break;
+        case 8:
+            name = 'Neptune'; break;
+    }
+
+    return name;
+}
+
+//Training JS #8: Conditional statement--switch  https://www.codewars.com/kata/572059afc2f4612825000d8a/train/javascript
+function howManydays(month){
+    var days;
+    switch (month){
+        case 1:
+        case 3:
+        case 5:
+        case 7:
+        case 8:
+        case 10:
+        case 12:
+            days = 31; break;
+        case 2: days = 28; break;
+        case 4:
+        case 6:
+        case 9:
+        case 11:
+            days = 30; break;
+
+    }
+    return days;
+}
+
+//Basic Mathematical Operations   https://www.codewars.com/kata/57356c55867b9b7a60000bd7
+function basicOp(op, v1, v2){
+    let x;
+    switch (op){
+        case "+": x = v1 + v2; break;
+        case "-": x = v1 - v2; break;
+        case "*": x = v1 * v2; break;
+        case "/": x = v1 / v2; break;
+    }
+    return x;
+}
+
+
+//Switch it Up!  https://www.codewars.com/kata/5808dcb8f0ed42ae34000031/train/javascript
+function switchItUp(number){
+    let x;
+    switch(number) {
+        case 0: x = "Zero"; break;
+        case 1: x = "One"; break;
+        case 2: x = "Two"; break;
+        case 3: x = "Three"; break;
+        case 4: x = "Four"; break;
+        case 5: x = "Five"; break;
+        case 6: x = "Six"; break;
+        case 7: x = "Seven"; break;
+        case 8: x = "Eight"; break;
+        case 9: x = "Nine"; break;
+    }
+    return x;
+}
+
+
+//simple calculator   https://www.codewars.com/kata/5810085c533d69f4980001cf/train/javascript
+function calculator(a,b,sign){
+    if (typeof a !== 'number' || typeof b !== 'number')
+        return "unknown value";
+    let x;
+    switch(sign){
+        case "+": x = a + b; break;
+        case "-": x = a - b; break;
+        case "*": x = a * b; break;
+        case "/": x = a / b; break;
+        default: x = "unknown value";
+    }
+    return x;
+}
+
+
+//No zeros for heros  https://www.codewars.com/kata/570a6a46455d08ff8d001002/train/javascript
+function noBoringZeros(n) {
+    if (n === 0) return 0;
+    while (n % 10 === 0){
+        n = n / 10;
+    }
+    return n;
+}
+
 
