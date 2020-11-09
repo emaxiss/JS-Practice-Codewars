@@ -115,3 +115,29 @@ var gimme = function (inputArray) {
     const arr = [...inputArray].sort((a, b) => a - b);
     return inputArray.indexOf(arr[1]);
 };
+
+//Basic Calculator  https://www.codewars.com/kata/5296455e4fe0cdf2e000059f/train/javascript
+function calculate(num1, operation, num2) {
+    let x;
+    if (num2 === 0 && operation === "/") return null;
+    switch (operation) {
+        case "+": x = num1 + num2; break;
+        case "-": x = num1 - num2; break;
+        case "*": x = num1 * num2; break;
+        case "/": x = num1 / num2; break;
+        default: x = null;
+    }
+    return x;
+}
+
+//Power of two   https://www.codewars.com/kata/534d0a229345375d520006a0/train/javascript
+function isPowerOfTwo(n){
+    if (n === 0) return false;
+    while(n % 2 == 0){
+        n = n/2
+    }
+    return n === 1
+}
+
+
+
