@@ -140,4 +140,27 @@ function isPowerOfTwo(n){
 }
 
 
+//Form The Minimum  https://www.codewars.com/kata/5ac6932b2f317b96980000ca/train/javascript
+function minValue(values){
+    let unique = values.filter((el, i) => i === values.indexOf(el));
+    return +unique.sort((a, b) => a - b).join('');
+}
+
+
+//Sort Santa's Reindeer  https://www.codewars.com/kata/52ab60b122e82a6375000bad
+function sortReindeer(reindeerNames) {
+    return reindeerNames.sort((a, b) => a.split(' ')[1] > b.split(' ')[1] ? 1 : -1);
+}
+
+
+//Filter Coffee  https://www.codewars.com/kata/56069d0c4af7f633910000d3/train/javascript
+function search(budget, prices) {
+    return prices.filter(el => el <= budget).sort((a, b) => a -b).join(',');
+}
+
+
+//Sort by Last Char  https://www.codewars.com/kata/57eba158e8ca2c8aba0002a0/train/javascript
+function last(x){
+    return x.split(' ').sort((a, b) => a[a.length - 1] > b[b.length - 1] ? 1 : -1);
+}
 
