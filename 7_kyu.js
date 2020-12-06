@@ -164,4 +164,30 @@ function last(x){
     return x.split(' ').sort((a, b) => a[a.length - 1] > b[b.length - 1] ? 1 : -1);
 }
 
-//
+//Character Counter     https://www.codewars.com/kata/56786a687e9a88d1cf00005d/train/javascript
+function count(str, char){
+    let s = 0;
+    for (let el of str){
+        if (el === char){
+            s++;
+        }
+    }
+    return s;
+}
+function validateWord(s){
+    s = s.toLowerCase();
+    s = s.split('').map(el => count(s, el));
+    return s.every(el => el === s[0]);
+}
+
+//Tidy Number (Special Numbers Series #9)   https://www.codewars.com/kata/5a87449ab1710171300000fd/train/javascript
+function tidyNumber(n){
+    let s = n.toString().split('');
+    return +s.sort().join('') === n;
+}
+
+//Working with arrays I (and why your code fails in some katas)   https://www.codewars.com/kata/5a4ff3c5fd56cbaf9800003e
+function withoutLast(arr) {
+    return arr.slice(0, -1);
+}
+
