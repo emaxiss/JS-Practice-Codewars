@@ -568,4 +568,9 @@ function bigToSmall(arr){
     return res.sort((a, b) => b - a).join('>');
 }
 
-//
+//Remove the time  https://www.codewars.com/kata/56b0ff16d4aa33e5bb00008e/train/javascript
+function shortenToDate(longDate) {
+    let a = longDate.split(',');
+    return a[0];
+}
+
