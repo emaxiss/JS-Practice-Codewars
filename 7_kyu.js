@@ -191,3 +191,17 @@ function withoutLast(arr) {
     return arr.slice(0, -1);
 }
 
+//How much coffee do you need?   https://www.codewars.com/kata/57de78848a8b8df8f10005b1/train/javascript
+function howMuchCoffee(events) {
+    let arr = ['cw', 'cat', 'movie', 'dog'];
+    events = events.filter(el=> arr.includes(el.toLowerCase())).map(el=> el === el.toLowerCase()? 1: 2)
+        .reduce((acc, el) => acc + el, 0);
+    return events > 3? "You need extra sleep" : events;
+}
+
+//Fruit string calculator  https://www.codewars.com/kata/57b9fc5b8f5813384a000aa3/train/javascript
+function calculate(string) {
+    let arr = string.split(' ').filter(el => +el).map(el => +el)
+    return string.includes('loses')? arr[0] - arr[1] : arr[0] + arr[1];
+}
+
