@@ -574,3 +574,36 @@ function shortenToDate(longDate) {
     return a[0];
 }
 
+// Reversing Words in a String   https://www.codewars.com/kata/57a55c8b72292d057b000594/train/javascript
+const reverse = string => {
+    return string.split(' ').reverse().join(' ');
+}
+
+//Find the smallest integer in the array   https://www.codewars.com/kata/55a2d7ebe362935a210000b2/train/javascript
+class SmallestIntegerFinder {
+    findSmallestInt(args) {
+        let min = args[0];
+        for (let i = 1; i < args.length; i++){
+            if (args[i] < min) min = args[i];
+        }
+        return min;
+    }
+}
+
+//Find Maximum and Minimum Values of a List   https://www.codewars.com/kata/577a98a6ae28071780000989/train/javascript
+const min = list => {
+    let m = list[0];
+    for (let i = 1; i < list.length; i++){
+        if (list[i] < m) m = list[i];
+    }
+    return m;
+}
+
+const max = list => {
+    let m = list[0];
+    for (let i = 1; i < list.length; i++){
+        if (list[i] > m) m = list[i]
+    }
+    return m;
+}
+
