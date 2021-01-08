@@ -607,3 +607,9 @@ const max = list => {
     return m;
 }
 
+
+//Is it a palindrome?    https://www.codewars.com/kata/57a1fd2ce298a731b20006a4/train/javascript
+function isPalindrome(x) {
+    x = x.toLowerCase();
+    return x===x.split('').reverse().join('');
+}

@@ -205,3 +205,27 @@ function calculate(string) {
     return string.includes('loses')? arr[0] - arr[1] : arr[0] + arr[1];
 }
 
+//Going to the cinema   https://www.codewars.com/kata/562f91ff6a8b77dfe900006e/train/javascript
+function movie(card, ticket, perc) {
+    let count = 0;
+    let x = ticket;
+    let sum = card;
+    while (Math.ceil(ticket*count) <= Math.ceil(sum)){
+        x*=perc;
+        sum+=x;
+        count++;
+    }
+    return count;
+};
+
+//Count by X   https://www.codewars.com/kata/5513795bd3fafb56c200049e/train/javascript
+function countBy(x, n) {
+    var z = [];
+    let t = n;
+    for (let i = x; t > 0; i+=x){
+        z.push(i);
+        t--;
+    }
+    return z;
+}
+
